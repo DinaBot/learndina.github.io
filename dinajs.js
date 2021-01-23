@@ -1,3 +1,6 @@
+function myFunction(x) {
+  x.classList.toggle("change2");
+}
 function ToggleMenuShow(j){
     var menuj = document.getElementById("Menu"+j);
     if(menuj.style.display==="none"){
