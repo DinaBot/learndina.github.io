@@ -29,16 +29,19 @@ function ToggleMenuShow(j){
     }}
     else{
     if(menudiv.style.display==="none"){
-    menudiv.style.display="block";
-    document.getElementById("MainContentEnlarged").id="MainContent";
+        menudiv.style.display.right="245px";
+        menudiv.style.display="block";
+    document.getElementById("MainContent").style.left="245px";
+
     document.getElementById("youtubecontainerdiv").style.marginLeft="-7%";
     document.getElementById("youtubecontainerdiv").style.marginTop="-3%";
     document.getElementById("youtubecontainerdiv").style.width="114%";
     document.getElementById("LeftMenuButton").style.border='1px solid black';
     }
     else{
+        menudiv.style.right="0px";
       menudiv.style.display="none";
-      maincontent.id="MainContentEnlarged";
+      document.getElementById("MainContent").style.left="0px";
     document.getElementById("youtubecontainerdiv").style.marginLeft="-2%";
     document.getElementById("youtubecontainerdiv").style.marginTop="-2%";
     document.getElementById("youtubecontainerdiv").style.width="104%";
