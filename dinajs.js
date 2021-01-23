@@ -1,5 +1,8 @@
 function myFunction(x) {
-  x.classList.toggle("change2");
+    x.classList.toggle("change2");
+  }
+function Refresh(){
+    if(screen.width>1000){location.reload();}
 }
 function ToggleMenuShow(j){
     var menuj = document.getElementById("Menu"+j);
@@ -32,6 +35,9 @@ function ToggleMenuShow(j){
     }}
     else{
     if(menudiv.style.display==="none"){
+        // document.getElementsByClassName("bar1").style.backgroundColor="#333";
+        // document.getElementsByClassName("bar2").style.backgroundColor="#333";
+        // document.getElementsByClassName("bar3").style.backgroundColor="#333";
         menudiv.style.display.right="245px";
         menudiv.style.display="block";
     document.getElementById("MainContent").style.left="245px";
@@ -42,6 +48,9 @@ function ToggleMenuShow(j){
     document.getElementById("LeftMenuButton").style.border='1px solid black';
     }
     else{
+        // document.getElementsByClassName("bar1").style.backgroundColor="#f7f7f7";
+        // document.getElementsByClassName("bar2").style.backgroundColor="#f7f7f7";
+        // document.getElementsByClassName("bar3").style.backgroundColor="#f7f7f7";
         menudiv.style.right="0px";
       menudiv.style.display="none";
       document.getElementById("MainContent").style.left="0px";
