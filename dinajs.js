@@ -1,3 +1,4 @@
+
 function myFunction(x) {
     x.classList.toggle("change2");
   }
@@ -14,6 +15,8 @@ function ToggleMenuShow(j){
     }
 }
    function BodyLoadFunction(){
+       $('.topicdivm').addClass('rounded-lg px-8');
+       $('.divexample').addClass('rounded-lg px-8');
    if(window.innerWidth<700){var menudiv=document.getElementById("LeftDiv");
    var maincontent=document.getElementById("MainContent");
    if(window.innerWidth<700){
@@ -73,8 +76,62 @@ function ToggleMenuShow(j){
     }
     }
    }
-   
-   
-   function scrollMain(){
+   var d=0;
+   function DarkMode(){
+       if(d==0){
+        d=1;
+       document.body.style.backgroundColor="#121212";
+       document.body.style.color="white";
+       document.getElementById("TopHeaderSVG").src="untitled (14).svg";
+       $('#buttondl').css('background-color','white');
+       $('#buttondl').css('color','#121212');
+       document.getElementById('buttondl').innerHTML='<CENTER>LightMode</CENTER>';
+       $('.topicdivm').css('background-color','orange');
+       $('.LessonHead').css('color','white');
+       $('.LessonHead').css('background-color','#121212');
+       $('#MiniContent').css('background-color','#121212');
+       $('#MiniContent').css('color','white');
+       $('.LessonItem').css('background-color','#121212');
+       $('.LeftDiv').css('background-color','#121212 !important');
+       $('.LessonItemIcon').css('filter','invert(100%) sepia(100%) saturate(0%) hue-rotate(360deg) brightness(104%) contrast(103%)');
+       $('#DownloadButton').css('filter','invert(100%) sepia(100%) saturate(0%) hue-rotate(360deg) brightness(104%) contrast(103%)');
+       $('.LessonItemText').css('color','white');
+       $('.CurrentLessonItem').css('background-color','#332940');
+       $('.bar1').css('background-color','white');
+       $('.bar2').css('background-color','white');
+       $('.bar3').css('background-color','white');
+       $('.LessonItem:hover').css('background-color','white');
+       $('.LessonItem').css('background-color','#121212');
+       $('.LessonItemIcon').css({ fill: "white" });
+       $('.divexample').css('color','white');
+       $('.divexample').css('background-color','#332940');
+    }
+
+       else{
+        d=0;
+        document.body.style.backgroundColor="white";
+        document.body.style.color="black";
+        $('#buttondl').css('color','white');
+       $('#buttondl').css('background-color','#121212');
+       document.getElementById('buttondl').innerHTML='<CENTER>DarkMode</CENTER>';
+        document.getElementById("TopHeaderSVG").src="https://dinalearn.dinaacademy.org/DinaAcademySVG.svg";
+        $('.LessonHead').css('color','black');
+        $('.topicdivm').css('background-color','aqua');
+        $('.LessonHead').css('background-color','white');
+        $('#MiniContent').css('background-color','white');
+        $('.LessonItemIcon').css('filter','invert(0%) sepia(11%) saturate(17%) hue-rotate(199deg) brightness(94%) contrast(100%)');
+        $('#DownloadButton').css('filter','invert(0%) sepia(11%) saturate(17%) hue-rotate(199deg) brightness(94%) contrast(100%)');
+        $('#MiniContent').css('color','#373A3C');
+        $('.LessonItem').css('background-color','white');
+        $('.LessonItemText').css('color','#373A3C');
+        $('.CurrentLessonItem').css('background-color','#FFFF66');
+        $('.bar1').css('background-color','#333');
+        $('.bar2').css('background-color','#333');
+        $('.bar3').css('background-color','#333');
+        $('.LessonItem:hover').css('background-color','#FFFF66');
+        $('.LessonItem').css('background-color','white');
+        $('.divexample').css('color','black');
+        $('.divexample').css('background-color','lightsalmon');
+       }
+
    }
-   
