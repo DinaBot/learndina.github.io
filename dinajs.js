@@ -82,7 +82,7 @@ function ToggleMenuShow(j){
         d=1;
        document.body.style.backgroundColor="#121212";
        document.body.style.color="white";
-       document.getElementById("TopHeaderSVG").src="untitled (14).svg";
+       document.getElementById("TopHeaderSVG").src="https://dinalearn.dinaacademy.org/darkSVG.svg";
        $('#buttondl').css('background-color','white');
        $('#buttondl').css('color','#121212');
        document.getElementById('buttondl').innerHTML='<CENTER>LightMode</CENTER>';
