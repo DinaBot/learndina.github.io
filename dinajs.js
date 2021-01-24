@@ -14,17 +14,29 @@ function ToggleMenuShow(j){
     }
 }
    function BodyLoadFunction(){
-   if(window.innerWidth<700){LeftMenuButtonClick();}
-   document.getElementById("LeftMenuButton").style.transform='rotate(0deg)';
+   if(window.innerWidth<700){var menudiv=document.getElementById("LeftDiv");
+   var maincontent=document.getElementById("MainContent");
+   if(window.innerWidth<700){
+   if(menudiv.style.display==="none"){
+      menudiv.style.display="block";
+      document.getElementById("GreySpace").style.display="block";
+      
+   } else{
+      menudiv.style.display="none";
+      document.getElementById("GreySpace").style.display="none";
+      maincontent.style.display="block";
+   }}
+   }
    }
    function LeftMenuButtonClick(){
+       
     var menudiv=document.getElementById("LeftDiv");
     var maincontent=document.getElementById("MainContent");
     if(window.innerWidth<700){
+        document.getElementById("LeftMenuButton").classList.toggle("change2");
     if(menudiv.style.display==="none"){
        menudiv.style.display="block";
        document.getElementById("GreySpace").style.display="block";
-      //  maincontent.style.display="none";
        document.getElementById("LeftMenuButton").style.transform='rotate(0deg)';
        
     } else{
