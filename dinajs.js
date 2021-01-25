@@ -1,4 +1,5 @@
 
+
 function myFunction(x) {
     x.classList.toggle("change2");
   }
@@ -30,6 +31,8 @@ function ToggleMenuShow(j){
       maincontent.style.display="block";
    }}
    }
+   $('#blurdiv').css('display','none');
+   $('#loadanimation').css('display','none');
    }
    function LeftMenuButtonClick(){
        
@@ -76,10 +79,11 @@ function ToggleMenuShow(j){
     }
     }
    }
-   var d=0;
+   var d= 0;
    function DarkMode(){
-       if(d==0){
+	   if(d==0){
         d=1;
+		document.cookie="d=1";
        document.body.style.backgroundColor="#121212";
        document.body.style.color="white";
        document.getElementById("TopHeaderSVG").src="https://dinalearn.dinaacademy.org/darkSVG.svg";
@@ -105,10 +109,12 @@ function ToggleMenuShow(j){
        $('.LessonItemIcon').css({ fill: "white" });
        $('.divexample').css('color','white');
        $('.divexample').css('background-color','#332940');
+	   $('#MainContent').css('color','white');
     }
 
        else{
         d=0;
+		document.cookie="d=0";
         document.body.style.backgroundColor="white";
         document.body.style.color="black";
         $('#buttondl').css('color','white');
@@ -132,6 +138,7 @@ function ToggleMenuShow(j){
         $('.LessonItem').css('background-color','white');
         $('.divexample').css('color','black');
         $('.divexample').css('background-color','lightsalmon');
+		$('#MainContent').css('color','#373A3C');
        }
 
    }
