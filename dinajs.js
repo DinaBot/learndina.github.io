@@ -16,7 +16,9 @@ function ToggleMenuShow(j){
     }
 }
    function BodyLoadFunction(){
-       $('.topicdivm').addClass('rounded-lg px-8');
+       $('.topicdivm').addClass('rounded-lg');
+	   $('.topicdivm').addClass('px-8');
+	   
        $('.divexample').addClass('rounded-lg px-8');
    if(window.innerWidth<700){var menudiv=document.getElementById("LeftDiv");
    var maincontent=document.getElementById("MainContent");
